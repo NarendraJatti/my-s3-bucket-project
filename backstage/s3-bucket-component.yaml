@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: s3-bucket
+  description: S3 Bucket managed by Terraform
+  tags:
+    - aws
+    - s3
+    - terraform
+spec:
+  type: service
+  lifecycle: production
+  owner: team-aws
+  terraform:
+    path: ./terraform
